@@ -14,9 +14,15 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
     />
+
+  />
+  <link rel="stylesheet" href="scss/custom.css">
+  <link rel="stylesheet" href="css/style.css" />
+
     <title>Pet's Home - Testimonios</title>
   </head>
   <body>
+    
     <!--Nav-->
 
     <nav class="navbar navbar-expand-lg navbar-light bg-primary fixed-top">
@@ -63,7 +69,7 @@
     </nav>
 
     <!--Carrousel-->
-    <div class="container-fluid mt-5">
+    <div class="container-fluid mt-5 pt-4">
     <div
       id="carouselExampleCaptions"
       class="carousel slide"
@@ -103,7 +109,7 @@
               Ruffo, 3 años, adoptado por Micaela en Quilmes, Buenos Aires
             </h5>
             <p>
-              "Gracias a Pets’ Home pude conocer a Ruffo, mi compañero de todos
+              "Gracias a Pets' Home pude conocer a Ruffo, mi compañero de todos
               los días. Estoy agradecida porque es lo que siempre soñé"
             </p>
           </div>
@@ -164,80 +170,102 @@
       </button>
   </div>
 </div>
-      <button class="buttonTest">Ver todos los testimonios</button>
-      <h3>¿Querés que tu historia aparezca en esta sección?</h3>
-      <p class="mandarCorreo">
-        Mandanos un correo contándonos la historia de cómo conocer a tu mascota
-        a través de Pets’ Home te cambió la vida.
-      </p>
-      <p class="historiaLikes">
-        ¡Acordate que la historia con más likes en el mes se gana 20 kilos de
-        alimento!
-      </p>
-      <button class="buttonQuiero">
-        QUIERO CONTAR MI HISTORIA <img src="" alt="IconoCorreo" />
-      </button>
-    </section>
-    -->
-    <!-- ======= Footer ======= -->
-    <footer id="footer" class="footer bg-primary text-white">
-      <div class="footer-top">
-        <div class="container">
-          <div class="row gy-4">
-            <div class="col-lg-5 col-md-12 footer-info">
-              <a href="index.html" class="logo d-flex align-items-center">
-                <img src="Img/LogoFooter.png" alt="LogoFooter" />
-              </a>
-              <p>
-                Cras fermentum odio eu feugiat lide par naso tierra. Justo eget
-                nada terra videa magna derita valies darta donna mare fermentum
-                iaculis eu non diam phasellus.
-              </p>
-              <div class="social-links mt-3">
-                <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
-                <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-                <a href="#" class="instagram"
-                  ><i class="bi bi-instagram"></i
-                ></a>
-                <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+    <!--Ingreso de datos - mail mascotas en la ciudad-->
+
+    <div class="container p-5 bg-success text-center my-5 rounded-3">
+      <div class="row mx-4">
+        <div class="col-sm-12 mb-2">
+          <p class="fs-3 fw-bold text-white">
+            ¿Querés aparecer en esta sección? Mandanos tu historia y participá para ganarte 20 kilos de alimento para tu mascota.
+          </p>
+        </div>
+        <div class="col mb-1">
+          <form class="form-floating">
+            <input
+              type="email"
+              class="form-control"
+              id="floatingInputValue"
+              placeholder="name@example.com"
+              value="test@example.com"
+            />
+            <label for="floatingInputValue">Tu mail</label>
+            <div class="col mt-1 p-3">
+              <div class="form-floating">
+                <textarea class="form-control" placeholder="TuHistoria" id="floatingTextarea2" style="height: 150px"></textarea>
+                <label for="floatingTextarea2">Contanos tu historia</label>
               </div>
             </div>
+              <button type="button" class="botonEnviar" data-bs-toggle="modal" data-bs-target="#ModalTest">
+                Enviar
+              </button>
+        </div>
+      </div>
+    </div>
 
-            <div class="col-lg-3 col-md-12 footer-contact text-md-start">
-              <h4>Contact Us</h4>
-              <ul>
-                <li>
-                  <i class="bi bi-chevron-right"></i> <a href="#">Home</a>
-                </li>
-                <li>
-                  <i class="bi bi-chevron-right"></i> <a href="#">About us</a>
-                </li>
-                <li>
-                  <i class="bi bi-chevron-right"></i> <a href="#">Services</a>
-                </li>
-                <li>
-                  <i class="bi bi-chevron-right"></i>
-                  <a href="#">Terms of service</a>
-                </li>
-                <li>
-                  <i class="bi bi-chevron-right"></i>
-                  <a href="#">Privacy policy</a>
-                </li>
-              </ul>
+<!-- Modal -->
+<div class="modal fade" id="ModalTest" tabindex="-1" aria-labelledby="VentanaModalTest" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title fw-bold text-primary" id="ModalLabel">Gracias por enviar tu historia</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">Junto al equipo de Pets' Home estaremos leyendo tu relato. En caso de resultar ganador te contactaremos para que nos pases tus mejores fotos con tu mejor amigo.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary text-white" data-bs-dismiss="modal">Aceptar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer bg-primary text-white">
+
+    <div class="footer-top">
+      <div class="container ">
+        <div class="row gy-4">
+          <div class="col-lg-5 col-md-12 footer-info">
+            <a href="index.html" class="logo d-flex align-items-center">
+              <img src="Img/LogoFooter.png" alt="LogoFooter" />
+            </a>
+            <p>Pet's Home - conocé a tu mejor amigo. Un espacio donde se reúnen refugios de mascotas, interesados en adoptar y mascotas esperando ser adoptadas.</p>
+            <div class="social-links mt-3">
+              <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+              <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+              <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+              <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
             </div>
           </div>
-        </div>
-      </div>
 
-      <div class="container">
-        <div class="copyright">
-          &copy; Copyright <strong><span>JereVillegas</span></strong
-          >. Todos los derechos reservados.
+          
+
+          <div class="col-lg-3 col-md-12 footer-contact text-white">
+            <h4>Atajos</h4>
+            <ul>
+              <li><i class="bi bi-chevron-right"></i> <a class="link-light" href="Valores.html">Valores</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a class="link-light" href="Servicios.html">Servicios</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a class="link-light" href="Testimonios.html">Testimonios</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a class="link-light" href="PreguntasFrecuentes.html">FAQS</a></li>
+            </ul>
+
+          </div>
+
         </div>
-        <div class="credits">Designed by JereVillegas</div>
       </div>
-    </footer>
-    <!-- End Footer -->
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>JereVillegas</span></strong>. Todos los derechos reservados.
+      </div>
+      <div class="credits">
+        Designed by JereVillegas
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+        
 
     <script src="js/bootstrap.js"></script>
   </body>

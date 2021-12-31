@@ -1,0 +1,96 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.cards {
+  width: 75%;
+  margin: 120px auto 50px auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 30px;
+}
+
+.card {
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
+}
+
+.img {
+  width: 100%;
+}
+
+.content {
+  text-align: center;
+  padding: 10px;
+}
+
+.content h2 {
+  margin-top: 5px;
+  letter-spacing: 1.5px;
+  color: #333;
+}
+
+.content h3 {
+  font-size: 17px;
+  color: #5c5c5c;
+  letter-spacing: 1.5px;
+}
+
+th img {
+  padding: 20px;
+  margin: 10px;
+}
+
+.content p {
+  margin-top: 10px;
+  color: #5c5c5c;
+}
+
+.botonEnviar {
+  margin-top: 10px;
+  text-decoration: none;
+  display: inline-block;
+  background-color: #e76c7b;
+  color: #fff;
+  font-size: 17px;
+  padding: 5px 18px;
+  border-radius: 40px;
+  letter-spacing: 1.5px;
+}
+
+.botonEnviar:hover {
+  background-color: #e24e5f;
+  transition: 0.2s ease;
+}
+
+ol {
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+  list-style-type: none;
+}
+
+li {
+  padding: 15px;
+  color: #e76c7b;
+  font-weight: bold;
+}
+
+li p {
+  color: #0099cc;
+  font-weight: normal;
+}
+
+ul {
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+  list-style-type: none;
+}
+
+.LegendForm {
+  margin-bottom: 30px;
+  font-size: 2rem;
+  font-weight: bold;
+}
